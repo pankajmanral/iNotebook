@@ -1,0 +1,34 @@
+export every file using 
+	module.exports 
+
+1. npx create-react-app app-name
+2. create backend and frontend folder 
+
+3. backend :
+	1. npm init 
+	2. npm install express 
+		    mongoose 
+		    nodemon
+		    cors
+
+	3. create db.js and index.js
+	main - app.use(express.json()) add this in index.js as we are using req.body to get the data
+
+	
+
+* contextAPI *
+	create two file 
+	1. noteContext - creates the context using createContext
+	2. noteState - imports the noteContext 
+	   default body - 
+		import noteContext from "./noteContext";
+
+                const noteState = (props) =>{
+
+                }
+
+                return (
+                	<noteContext.Provider values={{...}}>
+        		{props.children}
+        		</noteContext.Provider>
+		)
